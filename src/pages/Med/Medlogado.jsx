@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Medlogado.css'; // Importe o arquivo CSS aqui
+import './Medlogado.css'; 
 import Header2 from '../../components/header2';
 
 function Medlogado() {
@@ -78,6 +78,8 @@ function Medlogado() {
       });
 
       console.log('Arquivo enviado com sucesso');
+      // Adicionar alerta de sucesso
+      alert('Arquivo enviado com sucesso');
     } catch (error) {
       console.error('Erro ao enviar arquivo:', error);
     }

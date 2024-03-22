@@ -2,7 +2,6 @@ import '../components/login.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
 function Login() {
     const [cpf, setCpf] = useState('');
     const [senha, setSenha] = useState('');
@@ -15,7 +14,6 @@ function Login() {
 
         try {
             const response = await fetch('http://localhost:5000/login', {
-                
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -27,7 +25,8 @@ function Login() {
                 // Redireciona para a página de logado
                 navigate('/logado');
             } else {
-                console.error('Falha no login');
+                // Mostra um alerta de senha incorreta
+                alert('Senha incorreta');
             }
         } catch (error) {
             console.error('Erro ao fazer login:', error);
@@ -59,7 +58,6 @@ function Login() {
                     
                     <input type="submit" value="Enviar" />
                 </form>
-                
             </div>
         </div>
     );

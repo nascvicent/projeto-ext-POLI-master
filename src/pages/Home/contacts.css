@@ -1,0 +1,42 @@
+.contacts-container {
+    position: relative;
+    background-color: #13274F;
+    padding: 4rem 0;
+    color: white;
+    margin-top: 9vh;
+    margin-bottom: 10rem;
+    border-top: 1px solid #DCDCDC;
+}
+
+.text-container {
+    margin-left: 24px;
+    margin-right: 24vh;
+    text-align: left; 
+    margin-top: 2vh;
+}
+
+.text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.text span {
+    display: block;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+}
+
+.contacts-container::before {
+    content: "";
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    background-color: #13274F;
+}
